@@ -1,0 +1,253 @@
+:root{
+    --primary-color:rgb(229,9,20);
+    --white-color:#fff;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body{
+    font-family: "Netflix san",sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Embbed font Netflix */
+
+/* lighter */
+@font-face {
+    font-family: "Netflix san";
+    src: url("./fonts/NetflixSans_W_Lt.woff2");
+    font-weight: 100;
+}
+
+/* regular */
+@font-face {
+    font-family: "Netflix san";
+    src: url("./fonts/NetflixSans_W_Rg.woff2");
+    font-weight: 400;
+}
+
+/* medium */
+@font-face {
+    font-family: "Netflix san";
+    src: url("./fonts/NetflixSans_W_Md.woff2");
+    font-weight: 500;
+}
+
+/* bold */
+@font-face {
+    font-family: "Netflix san";
+    src: url("./fonts/NetflixSans_W_Bd.woff2");
+    font-weight: 700;
+}
+
+/* font-weight:900 */
+@font-face {
+    font-family: "Netflix san";
+    src: url("./fonts/NetflixSans_W_Blk.woff2");
+    font-weight: 900;
+}
+
+.text-xsmall{
+    font-size:1.4rem;
+}
+
+.text-small{
+    font-size:1.6rem;
+}
+
+.text-normal{
+    font-size:2rem;
+}
+
+.text-medium{
+    font-size:2.4rem;
+}
+
+.text-large{
+    font-size:4.8rem;
+}
+
+.text-weight-lighter{
+    font-weight: 100;
+}
+.text-weight-medium{
+    font-weight: 500;
+}
+.text-weight-bold{
+    font-weight:700
+}
+.text-weight-900{
+    font-weight: 900;
+}
+
+.text-white{
+    color:var(--white-color)
+}
+.text-center{
+    text-align: center;
+}
+
+/* Button */
+
+.btn {
+    background:none;
+    border:none;
+    outline:none;
+}
+
+.btn-primary{
+    background-color:var(--primary-color);
+    color:white;
+}
+
+.btn-medium{
+    padding: 9px 18px;
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 600;
+}
+
+.btn-large{
+    padding: 13px 25px;
+    font-size:22px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.d-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:586px;
+    height:56px;
+    margin:10px auto;
+}
+
+.d-flex .input-default{
+    flex:1;
+    margin-right:10px;
+    height:100%;
+    background-color:transparent;
+    padding-left:20px;
+    color:white;
+    font-size:20px;
+    border:1px solid red;
+}
+
+
+
+/* Header */
+header{
+    overflow: hidden;
+}
+.header-container{
+    width:100%;
+    height:700px;
+    position:relative;
+}
+.header-container::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    top:0;
+    position:absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+}
+.header-container .heroImage {
+    width:100%;
+    height:700px;
+    object-fit: cover;
+    transform: scale(1.25) translateY(-10%);
+}
+
+.header-top{
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:24px 365px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-top > img {
+    width:148px;
+    height:40px;
+}
+
+.header-top-right{
+    display:flex;
+    width:271px;
+    justify-content: space-between;
+}
+.header-select-wrapper{
+    position:relative;
+}
+.header-top-right select{
+    width:144px;
+    height:32px;
+    background:transparent;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius:4px;
+}
+
+.header-top-right .header-select-wrapper::before{
+    content:"";
+    background:url("./images/languageicon.svg") no-repeat center center / cover;
+    width:16px;
+    height:16px;
+    position:absolute;
+    left:6%;
+    top:25%;
+}
+
+.header-top-right .header-select-wrapper::after{
+    content:"";
+    background:url("./images/icondown.svg") no-repeat center center / cover;
+    width:16px;
+    height:16px;
+    position:absolute;
+    right:6%;
+    top:26%;
+}
+
+.header-bottom{
+    position:absolute;
+    width:1084px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    margin:189px auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.header-bottom .header-ready{
+    margin-bottom:20px;
+}
+
+.header-bottom .header-price{
+    margin-bottom:20px;
+}
+
+.header-bottom .header-title{
+    margin-bottom:20px;
+}
