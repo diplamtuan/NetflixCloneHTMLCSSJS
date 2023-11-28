@@ -1,5 +1,6 @@
 :root{
     --primary-color:rgb(229,9,20);
+    --secondary-color:#0071eb;
     --white-color:#fff;
 }
 
@@ -16,10 +17,15 @@ html {
 body{
     font-family: "Netflix san",sans-serif;
     font-weight: 400;
+    background-color:black;
 }
 
 a {
     text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 /* Embbed font Netflix */
@@ -95,8 +101,20 @@ a {
 .text-white{
     color:var(--white-color)
 }
+
+.text-secondary{
+    color:var(--secondary-color)
+}
 .text-center{
     text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
 }
 
 /* Button */
@@ -231,7 +249,7 @@ header{
 
 .header-bottom{
     position:absolute;
-    width:1084px;
+    width:1476px;
     bottom:0;
     left:50%;
     transform: translateX(-50%);
@@ -250,4 +268,148 @@ header{
 
 .header-bottom .header-title{
     margin-bottom:20px;
+}
+
+/* SECTION */
+
+section {
+    padding:0 205px;
+    min-height:679px;
+    overflow: hidden;
+    border-top:8px solid #232323;
+    border-bottom:8px solid #232323;
+}
+
+.section-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height:679px;
+}
+.section-container-left{
+    width:calc(100% / 2);
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-container-left h2{
+    margin-bottom:14px;
+}
+/* image download */
+.section-container-left > img{
+    width:100%;
+    height:100%;
+}
+
+.section-container-left .section-left-download-wrapper{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    height: 104px;
+    width: 394px;
+    bottom: 46px;
+    background-color: black;
+    left: 176px;
+    padding:8px 12px;
+}
+
+.section-container-left .section-left-download-wrapper .section-left-download-image{
+    height:80px;
+    margin-right:16px;
+}
+
+.section-left-download-body p:first-child{
+    margin-bottom:2px;
+}
+.section-container-left .section-left-download-wrapper .section-left-download-icon{
+    width:48px;
+    height:60px;
+    margin-left:auto;
+    object-fit: cover;
+}
+.section-container-right{
+    min-height:679px;
+    width:calc(100% / 2);
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-container-right h2{
+    margin-bottom:14px;
+}
+
+.section-container-right img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.section-container-right video{
+    position: absolute;
+    height: 290px;
+    width: 493px;
+    top: 107px;
+    left: 125px;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* frequent */
+.frequentSection{
+    padding-bottom:50px;
+}
+.frequentHeading{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
+.questionList{
+    width:100%;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.questionList .questionItem{
+    background-color:#2d2d2d;
+    margin-bottom:8px;
+    display:flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.questionList .questionItem > p{
+    padding:24px;
+    flex:1;
+    border-bottom:1px solid black;
+}
+.questionList .questionItem:hover{
+    cursor: pointer;
+    background-color:rgb(65,65,65);
+}
+
+.questionList .questionItem >img{
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:24px;
+    right:24px;
+}
+
+
+.answerList{
+    padding:24px;
+}
+
+
+.answerList .answerItem:nth-child(2){
+    margin-top:20px;
 }
