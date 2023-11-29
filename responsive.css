@@ -1,0 +1,215 @@
+/*  TABLET*/
+
+@media (max-width:1279px){
+    /* Header */
+    .header-top{
+        max-width: 96%;
+    }
+    .header-bottom{
+        max-width:94%;
+    }
+
+    /* Container */
+    .section-container{
+        max-width: 94%;
+    }
+
+    .frequentSection{
+        max-width:96%;
+    }
+
+    footer{
+        padding:72px 30px;
+    }
+}
+
+/* Mobile S */
+
+@media (max-width:959px){
+    .header-container{
+        height:512px;
+    }
+    .header-top > img{
+        width:88.8px;
+        height:24px;
+    }
+    .header-container .heroImage{
+        transform: scale(1) translateY(-25%);
+    }
+
+    .header-title{
+        font-size:3.2rem;
+    }
+
+    .header-bottom{
+        margin: 92px auto;
+    }
+    .header-price{
+        font-size:1.6rem;
+    }
+    .header-ready{
+        font-size:1.8rem;
+    }
+
+    /* section-contaienr */
+
+    .section-container{
+        flex-direction: column;
+        max-height:731px;
+    }
+    .section-container-left{
+        max-width: 100%;
+    }
+    .section-container-left h2{
+        font-size:3.2rem;
+        text-align: center;
+    }
+    .section-container-left p{
+        font-size:1.8rem;
+        width:100%;
+        text-align: center;
+    }
+
+    .section-container-right{
+        max-width: 640px;
+        max-height:480px;
+        padding:27% 0;
+    }
+
+    .container-download{
+        flex-direction: column-reverse;
+    }
+    .container-download .section-container-left{
+        height:480px;
+        width:640px;
+    }
+    .container-download .section-container-left > img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .container-download .section-container-right{
+        padding:0;
+    }
+    .container-download .section-container-right h2{
+        text-align: center;
+        font-size:3.2rem;
+    }
+
+    .container-download .section-container-right p{
+        font-size:1.8rem;
+        text-align: center;
+    }
+
+    /* Children */
+    .container-children{
+        flex-direction: column-reverse;
+    }
+
+    .container-children .section-container-left{
+        height:480px;
+        width:640px;
+    }
+    .container-children .section-container-left > img{
+        width:100%;
+        height:100%;
+    }
+    .container-children .section-container-right{
+        max-width: 100%;
+        padding:0;
+    }
+    .container-children .section-container-right h2{
+        font-size:3.2rem;
+        text-align: center;
+    }
+
+    .container-children .section-container-right p{
+        font-size:1.8rem;
+        text-align: center;
+    }
+
+    .frequentSection .frequentHeading{
+        font-size:3.2rem;
+    }
+
+    .frequentSection .questionItem p{
+        font-size:2rem;
+    }
+
+    .frequentSection .questionItem >img{
+        width:24px;
+        height:24px;
+    }
+
+    .frequentSection .answerItem p{
+        font-size:1.8rem;
+    }
+
+    .frequentSection .ready-text{
+        font-size:1.8rem;
+    }
+    footer .footerListWrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:599px){
+    .header-container .heroImage{
+        width:919px;
+        height:100%;
+        transform: scale(1) translateY(2%);
+    }
+    .header-top{
+        max-width:90%;
+    }
+    .header-top-right{
+        width: auto;
+    }
+    .header-select-wrapper{
+        width:64px;
+        height:32px;
+        margin-right:10px;
+    }
+    .header-select-wrapper select{
+        width:100%;
+        height:100%;
+        font-size:0;
+    }
+
+    .header-bottom{
+        margin-bottom:10px;
+    }
+    .d-flex{
+        flex-direction: column;
+        max-width:90%;
+        height:108px;
+    }
+
+    .d-flex input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .d-flex button{
+        padding: 12px 16px;
+        font-size: 2rem;
+    }
+    .header-price{
+        font-size:1.8rem;
+    }
+    .header-ready{
+        max-width:80%;
+        margin: 10px auto;
+    }
+    /* Enjoy */
+
+    .section-container-right{
+        max-width: 640px;
+        max-height: 480px;
+        padding: 37% 0;
+    }
+   
+}

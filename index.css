@@ -21,6 +21,7 @@ body{
 }
 
 a {
+    color:inherit;
     text-decoration: none;
 }
 
@@ -64,7 +65,17 @@ ul{
     src: url("./fonts/NetflixSans_W_Blk.woff2");
     font-weight: 900;
 }
+.text-justify{
+    text-align: justify;
+}
+.text-link{
+    text-decoration: underline;
+    color:rgba(255,255,255,0.7);
+}
 
+.text-non-link{
+    color:rgba(255,255,255,0.7);
+}
 .text-xsmall{
     font-size:1.4rem;
 }
@@ -197,8 +208,12 @@ header{
 .header-top{
     position:absolute;
     top:0;
+    left:0;
+    right:0;
+    margin:0 auto;
     width:100%;
-    padding:24px 365px;
+    max-width:90%;
+    padding:24px 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -217,8 +232,9 @@ header{
 }
 .header-select-wrapper{
     position:relative;
+    width:144px;
 }
-.header-top-right select{
+.header-select-wrapper select{
     width:144px;
     height:32px;
     background:transparent;
@@ -227,7 +243,7 @@ header{
     border-radius:4px;
 }
 
-.header-top-right .header-select-wrapper::before{
+.header-select-wrapper::before{
     content:"";
     background:url("./images/languageicon.svg") no-repeat center center / cover;
     width:16px;
@@ -237,7 +253,7 @@ header{
     top:25%;
 }
 
-.header-top-right .header-select-wrapper::after{
+.header-select-wrapper::after{
     content:"";
     background:url("./images/icondown.svg") no-repeat center center / cover;
     width:16px;
@@ -249,7 +265,8 @@ header{
 
 .header-bottom{
     position:absolute;
-    width:1476px;
+    max-width: 80%;
+    width:100%;
     bottom:0;
     left:50%;
     transform: translateX(-50%);
@@ -273,21 +290,24 @@ header{
 /* SECTION */
 
 section {
-    padding:0 205px;
-    min-height:679px;
+    /* max-height:679px; */
     overflow: hidden;
-    border-top:8px solid #232323;
     border-bottom:8px solid #232323;
 }
 
 .section-container{
+    width:100%;
+    max-width:79%;
+    margin:0 auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    min-height:679px;
+    max-height:679px;
+    padding:10% 0;
 }
 .section-container-left{
-    width:calc(100% / 2);
+    max-width: calc(100% / 2);
+    width:100%;
     position:relative;
     display:flex;
     flex-direction: column;
@@ -311,10 +331,10 @@ section {
     box-shadow: 0 0 2em 0 rgb(0,0,0);
     border-radius: 0.75rem;
     height: 104px;
-    width: 394px;
+    width: 52%;
     bottom: 46px;
     background-color: black;
-    left: 176px;
+    left: 24%;
     padding:8px 12px;
 }
 
@@ -333,8 +353,11 @@ section {
     object-fit: cover;
 }
 .section-container-right{
-    min-height:679px;
-    width:calc(100% / 2);
+    max-height: 546px;
+    padding:18% 0;
+    height:100%;
+    width:100%;
+    max-width:calc(100% / 2);
     position:relative;
     display:flex;
     flex-direction: column;
@@ -349,14 +372,26 @@ section {
     height:100%;
     position: absolute;
     z-index: 2;
+    object-fit: cover;
 }
 
-.section-container-right video{
+.section-container-right .enjoyVideo{
     position: absolute;
-    height: 290px;
-    width: 493px;
-    top: 107px;
-    left: 125px;
+    width: 100%;
+    max-height: 50%;
+    max-width: 64%;
+    top: 20%;
+    left: 17%;
+    z-index: 1;
+    object-fit: cover;
+}
+.section-container-right .watchVideo{
+    position: absolute;
+    width: 100%;
+    max-height: 50%;
+    max-width: 62%;
+    top: 9%;
+    left: 19%;
     z-index: 1;
     object-fit: cover;
 }
@@ -364,6 +399,9 @@ section {
 /* frequent */
 .frequentSection{
     padding-bottom:50px;
+    width: 100%;
+    max-width:80%;
+    margin:0 auto;
 }
 .frequentHeading{
     margin-top:50px;
@@ -411,16 +449,41 @@ section {
 .questionItem.show .answerList{
     height:auto;
     opacity: 1;
-    padding:24px;
 }
 .answerList{
     height:0;
-    padding:0;
     opacity: 0;
     transition: all 0.3s ease;
 }
 
-.answerList .answerItem:nth-child(2){
-    margin-top:20px;
+.answerList .answerItem{
+    padding:24px 24px 0 24px;
 }
 
+.answerList .answerItem:last-child{
+    padding-bottom:24px;
+}
+
+/* Footer */
+footer{
+    padding:72px 205px;
+    overflow: hidden;
+}
+
+footer .footerListWrapper{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer .footerList{
+    margin-top:24px;
+}
+
+footer .footerItem{
+    margin-bottom:18px;
+}
+footer .selectFooter{
+    margin-top:10px;
+}
+footer .footerCopyright{
+    margin-top:24px;
+}

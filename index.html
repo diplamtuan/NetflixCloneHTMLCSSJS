@@ -1,220 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Việt Nam – Xem chương trình truyền hình trực tuyến, Xem phim trực tuyến</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Netflix Việt Nam – Xem chương trình truyền hình trực tuyến, Xem phim trực
+      tuyến
+    </title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="header-container">
-            <img class="heroImage" src="./images/hero.jpg" alt="hero"/>
-            <div class="header-top">
-                <img src="./images/logo.svg" alt="logo"/>
-                 <div class="header-top-right">
-                    <div class="header-select-wrapper">
-                        <select name="" id="languages" class="text-small text-white">
-                            <option value="VN">
-                                Tiếng Việt
-                            </option>
-                        </select>
-                    </div>
-                    <button class="btn btn-primary btn-medium">
-                        Đăng nhập
-                    </button>
-                </div>
+      <div class="header-container">
+        <img class="heroImage" src="./images/hero.jpg" alt="hero" />
+        <div class="header-top">
+          <img src="./images/logo.svg" alt="logo" />
+          <div class="header-top-right">
+            <div class="header-select-wrapper">
+              <select name="" id="languages" class="text-small text-white">
+                <option value="VN" selected>Tiếng Việt</option>
+              </select>
             </div>
-            <div class="header-bottom">
-                <h2 class="text-white text-center text-large text-weight-900 header-title">
-                    Những tựa phim Việt Nam và quốc tế đình đám. Tất cả đều có trên Netflix với giá chỉ từ 70.000 ₫.</h2>
-                <p class="text-white text-center text-medium header-price">
-                    Tham gia hôm nay, hủy bất kỳ lúc nào.
-                </p>
-                <p class="text-white text-center text-normal header-ready">
-                    Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.
-                </p>
-                <!-- Subcribe -->
-                <div class="d-flex">
-                    <input type="email" class="input-default" placeholder="Địa chỉ email">
-                    <button class="btn btn-primary btn-large">
-                        Bắt đầu
-                        <img src="./images/iconright.svg" alt="iconright"/>
-                    </button>
-                </div>
-            </div>
+            <button class="btn btn-primary btn-medium">Đăng nhập</button>
+          </div>
         </div>
+        <div class="header-bottom">
+          <h2
+            class="text-white text-center text-large text-weight-900 header-title"
+          >
+            Những tựa phim Việt Nam và quốc tế đình đám. Tất cả đều có trên
+            Netflix với giá chỉ từ 70.000 ₫.
+          </h2>
+          <p class="text-white text-center text-medium header-price">
+            Tham gia hôm nay, hủy bất kỳ lúc nào.
+          </p>
+          <p class="text-white text-center text-normal header-ready">
+            Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư
+            cách thành viên của bạn.
+          </p>
+          <!-- Subcribe -->
+          <div class="d-flex">
+            <input
+              type="email"
+              class="input-default"
+              placeholder="Địa chỉ email"
+            />
+            <button class="btn btn-primary btn-large">
+              Bắt đầu
+              <img src="./images/iconright.svg" alt="iconright" />
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+    text
     <!-- Section -->
     <!-- Enjoy TV -->
     <section>
-        <div class="section-container">
-            <div class="section-container-left">
-                <h2 class="text-white text-left text-large text-weight-900">Thưởng thức trên TV của bạn</h2>
-                <p class="text-white text-left text-medium">Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác.</p>
-            </div>
-            <div class="section-container-right">
-                <img src="./images/tv.png" alt="tv"/>
-                <video src="./video/video1.m4v" autoplay loop></video>
-            </div>
+      <div class="section-container">
+        <div class="section-container-left">
+          <h2 class="text-white text-left text-large text-weight-900">
+            Thưởng thức trên TV của bạn
+          </h2>
+          <p class="text-white text-left text-medium text-justify">
+            Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu
+            phát Blu-ray và nhiều thiết bị khác.
+          </p>
         </div>
+        <div class="section-container-right">
+          <img src="./images/tv.png" alt="tv" />
+          <video
+            src="./video/video1.m4v"
+            autoplay
+            loop
+            class="enjoyVideo"
+          ></video>
+        </div>
+      </div>
     </section>
 
     <!-- Section -->
     <!-- Download -->
     <section>
-        <div class="section-container">
-            <div class="section-container-left">
-                <img src="./images/image1.jpg" alt="downloadimg"/>
-                <div class="section-left-download-wrapper">
-                    <img class="section-left-download-image" src="./images/image1.1.png" alt="image1.1"/>
-                    <div class="section-left-download-body">
-                        <p class="text-white text-left text-small text-weight-medium">
-                            Stranger Things
-                        </p>
-                        <p class="text-secondary text-left text-xsmall">Downloading...</p>
-                    </div>
-                    <img class="section-left-download-icon" src="./images/downloadicon.gif" alt="download-icon"/>
-                </div>
+      <div class="section-container container-download">
+        <div class="section-container-left">
+          <img src="./images/image1.jpg" alt="downloadimg" />
+          <div class="section-left-download-wrapper">
+            <img
+              class="section-left-download-image"
+              src="./images/image1.1.png"
+              alt="image1.1"
+            />
+            <div class="section-left-download-body">
+              <p class="text-white text-left text-small text-weight-medium">
+                Stranger Things
+              </p>
+              <p class="text-secondary text-left text-xsmall">Downloading...</p>
             </div>
-            <div class="section-container-right">
-                <h2 class="text-white text-left text-large text-weight-900">Tải xuống nội dung để xem ngoại tuyến</h2>
-                <p class="text-white text-left text-medium">Lưu lại những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.</p>
-            </div>
+            <img
+              class="section-left-download-icon"
+              src="./images/downloadicon.gif"
+              alt="download-icon"
+            />
+          </div>
         </div>
+        <div class="section-container-right">
+          <h2 class="text-white text-left text-large text-weight-900">
+            Tải xuống nội dung để xem ngoại tuyến
+          </h2>
+          <p class="text-white text-left text-medium text-justify">
+            Lưu lại những nội dung yêu thích một cách dễ dàng và luôn có thứ để
+            xem.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Section -->
     <!-- Watch everywhere -->
     <section>
-        <div class="section-container">
-            <div class="section-container-left">
-                <h2 class="text-white text-left text-large text-weight-900">Xem ở mọi nơi</h2>
-                <p class="text-white text-left text-medium">Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy tính xách tay và TV.</p>
-            </div>
-            <div class="section-container-right">
-                <img src="./images/device-pile-vn.png" alt="tv"/>
-                <video src="./video/video.m4v" autoplay loop></video>
-            </div>
+      <div class="section-container">
+        <div class="section-container-left">
+          <h2 class="text-white text-left text-large text-weight-900">
+            Xem ở mọi nơi
+          </h2>
+          <p class="text-white text-left text-medium text-justify">
+            Phát trực tuyến không giới hạn phim và chương trình truyền hình trên
+            điện thoại, máy tính bảng, máy tính xách tay và TV.
+          </p>
         </div>
+        <div class="section-container-right">
+          <img src="./images/device-pile-vn.png" alt="tv" />
+          <video
+            src="./video/video.m4v"
+            autoplay
+            loop
+            class="watchVideo"
+          ></video>
+        </div>
+      </div>
     </section>
 
     <!-- Section -->
     <!-- Forkid -->
     <section>
-        <div class="section-container">
-            <div class="section-container-left">
-                <img src="./images/children.png" alt="children"/>
-            </div>
-            <div class="section-container-right">
-                <h2 class="text-white text-left text-large text-weight-900">
-                    Tạo hồ sơ cho trẻ em
-                </h2>
-                <p class="text-white text-left text-medium">
-                    Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích trong một không gian riêng. Tính năng này đi kèm miễn phí với tư cách thành viên của bạn.
-                </p>
-            </div>
+      <div class="section-container container-children">
+        <div class="section-container-left">
+          <img src="./images/children.png" alt="children" />
         </div>
+        <div class="section-container-right">
+          <h2 class="text-white text-left text-large text-weight-900">
+            Tạo hồ sơ cho trẻ em
+          </h2>
+          <p class="text-white text-left text-medium text-justify">
+            Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích
+            trong một không gian riêng. Tính năng này đi kèm miễn phí với tư
+            cách thành viên của bạn.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- Section -->
     <!-- Frequent Asked question -->
-    <section class="frequentSection">
-        <h2 class="text-white text-center text-large text-weight-900 frequentHeading">Câu hỏi thường gặp</h2>
+    <section>
+      <div class="frequentSection">
+        <h2
+          class="text-white text-center text-large text-weight-900 frequentHeading"
+        >
+          Câu hỏi thường gặp
+        </h2>
         <ul class="questionList">
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Netflix là gì?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Netflix là dịch vụ phát trực tuyến mang đến đa dạng các loại chương trình truyền hình, phim, anime, phim tài liệu đoạt giải thưởng và nhiều nội dung khác trên hàng nghìn thiết bị có kết nối Internet.
-                        </p>
-                    </li>
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn muốn mà không gặp phải một quảng cáo nào – tất cả chỉ với một mức giá thấp hàng tháng. Luôn có những nội dung mới để bạn khám phá và những chương trình truyền hình, phim mới được bổ sung mỗi tuần!
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Tôi phải trả bao nhiêu tiền để xem Netflix?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Xem Netflix trên điện thoại thông minh, máy tính bảng, TV thông minh, máy tính xách tay hoặc thiết bị phát trực tuyến, chỉ với một khoản phí cố định hàng tháng. Các gói dịch vụ với mức giá từ 70.000 ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí, không hợp đồng.
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Tôi có thể xem ở đâu?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản Netflix của bạn để xem ngay trên trang web netflix.com từ máy tính cá nhân, hoặc trên bất kỳ thiết bị nào có kết nối Internet và có cài đặt ứng dụng Netflix, bao gồm TV thông minh, điện thoại thông minh, máy tính bảng, thiết bị phát đa phương tiện trực tuyến và máy chơi game.
-                        </p>
-                    </li>
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng dụng trên iOS, Android hoặc Windows 10. Vào phần nội dung đã tải xuống để xem trong khi di chuyển và khi không có kết nối Internet. Mang Netflix theo bạn đến mọi nơi.
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Làm thế nào để hủy?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Netflix rất linh hoạt. Không có hợp đồng phiền toái, không ràng buộc. Bạn có thể dễ dàng hủy tài khoản trực tuyến chỉ trong hai cú nhấp chuột. Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng tài khoản bất cứ lúc nào.
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Tôi có thể xem gì trên Netflix?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Netflix có một thư viện phong phú gồm các phim truyện, phim tài liệu, chương trình truyền hình, anime, tác phẩm giành giải thưởng của Netflix và nhiều nội dung khác. Xem không giới hạn bất cứ lúc nào bạn muốn.
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="questionItem">
-                <p class="text-white text-left text-medium">Netflix có phù hợp cho trẻ em không?</p>
-                <img src="./images/plusicon.svg" alt="plusicon"/>
-                <ul class="answerList">
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Trải nghiệm Netflix Trẻ em có sẵn trong gói dịch vụ của bạn, trao cho phụ huynh quyền kiểm soát trong khi các em có thể thưởng thức các bộ phim và chương trình phù hợp cho gia đình tại không gian riêng.
-                        </p>
-                    </li>
-                    <li class="answerItem">
-                        <p class="text-white text-left text-medium">
-                            Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo vệ bằng mã PIN), cho phép bạn giới hạn độ tuổi cho nội dung con mình được phép xem, cũng như chặn những phim hoặc chương trình mà bạn không muốn các em nhìn thấy.
-                        </p>
-                    </li>
-                </ul>
-            </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">Netflix là gì?</p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Netflix là dịch vụ phát trực tuyến mang đến đa dạng các loại
+                  chương trình truyền hình, phim, anime, phim tài liệu đoạt giải
+                  thưởng và nhiều nội dung khác trên hàng nghìn thiết bị có kết
+                  nối Internet.
+                </p>
+              </li>
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn muốn mà
+                  không gặp phải một quảng cáo nào – tất cả chỉ với một mức giá
+                  thấp hàng tháng. Luôn có những nội dung mới để bạn khám phá và
+                  những chương trình truyền hình, phim mới được bổ sung mỗi
+                  tuần!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">
+              Tôi phải trả bao nhiêu tiền để xem Netflix?
+            </p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Xem Netflix trên điện thoại thông minh, máy tính bảng, TV
+                  thông minh, máy tính xách tay hoặc thiết bị phát trực tuyến,
+                  chỉ với một khoản phí cố định hàng tháng. Các gói dịch vụ với
+                  mức giá từ 70.000 ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí,
+                  không hợp đồng.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">
+              Tôi có thể xem ở đâu?
+            </p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản Netflix của bạn
+                  để xem ngay trên trang web netflix.com từ máy tính cá nhân,
+                  hoặc trên bất kỳ thiết bị nào có kết nối Internet và có cài
+                  đặt ứng dụng Netflix, bao gồm TV thông minh, điện thoại thông
+                  minh, máy tính bảng, thiết bị phát đa phương tiện trực tuyến
+                  và máy chơi game.
+                </p>
+              </li>
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng
+                  dụng trên iOS, Android hoặc Windows 10. Vào phần nội dung đã
+                  tải xuống để xem trong khi di chuyển và khi không có kết nối
+                  Internet. Mang Netflix theo bạn đến mọi nơi.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">Làm thế nào để hủy?</p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Netflix rất linh hoạt. Không có hợp đồng phiền toái, không
+                  ràng buộc. Bạn có thể dễ dàng hủy tài khoản trực tuyến chỉ
+                  trong hai cú nhấp chuột. Không mất phí hủy – bạn có thể bắt
+                  đầu hoặc ngừng tài khoản bất cứ lúc nào.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">
+              Tôi có thể xem gì trên Netflix?
+            </p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Netflix có một thư viện phong phú gồm các phim truyện, phim
+                  tài liệu, chương trình truyền hình, anime, tác phẩm giành giải
+                  thưởng của Netflix và nhiều nội dung khác. Xem không giới hạn
+                  bất cứ lúc nào bạn muốn.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="questionItem">
+            <p class="text-white text-left text-medium">
+              Netflix có phù hợp cho trẻ em không?
+            </p>
+            <img src="./images/plusicon.svg" alt="plusicon" />
+            <ul class="answerList">
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Trải nghiệm Netflix Trẻ em có sẵn trong gói dịch vụ của bạn,
+                  trao cho phụ huynh quyền kiểm soát trong khi các em có thể
+                  thưởng thức các bộ phim và chương trình phù hợp cho gia đình
+                  tại không gian riêng.
+                </p>
+              </li>
+              <li class="answerItem">
+                <p class="text-white text-left text-medium">
+                  Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo
+                  vệ bằng mã PIN), cho phép bạn giới hạn độ tuổi cho nội dung
+                  con mình được phép xem, cũng như chặn những phim hoặc chương
+                  trình mà bạn không muốn các em nhìn thấy.
+                </p>
+              </li>
+            </ul>
+          </li>
         </ul>
         <!-- Ready for subcsribe -->
-        <p class="text-white text-center text-normal">Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</p>
+        <p class="text-white text-center text-normal ready-text">
+          Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách
+          thành viên của bạn.
+        </p>
         <div class="d-flex">
-            <input type="email" class="input-default" placeholder="Địa chỉ email">
-            <button class="btn btn-primary btn-large">
-                Bắt đầu
-                <img src="./images/iconright.svg" alt="iconright"/>
-            </button>
+          <input
+            type="email"
+            class="input-default"
+            placeholder="Địa chỉ email"
+          />
+          <button class="btn btn-primary btn-large">
+            Bắt đầu
+            <img src="./images/iconright.svg" alt="iconright" />
+          </button>
         </div>
+      </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p class="text-link text-left text-small footerQuestion">
+        Bạn có câu hỏi? Liên hệ với chúng tôi.
+      </p>
+      <div class="footerListWrapper">
+        <ul class="footerList">
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Câu hỏi thường gặp </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Quan hệ với nhà đầu tư </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Quyền riêng tư </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Kiểm tra tốc độ </a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Trung tâm trợ giúp </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Việc làm </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Tùy chọn cookie </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Thông báo pháp lý </a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Tài khoản </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Các cách xem </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Thông tin doanh nghiệp </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Chỉ có trên Netflix </a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Trung tâm đa phương tiện </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Điều khoản sử dụng </a>
+          </li>
+          <li class="footerItem text-link text-left text-xsmall">
+            <a href="#"> Liên hệ với chúng tôi </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Select -->
+      <div class="header-select-wrapper selectFooter">
+        <select name="" id="languages" class="text-small text-white">
+          <option value="VN">Tiếng Việt</option>
+        </select>
+      </div>
+      <p class="text-non-link text-left text-xsmall footerCopyright">
+        Netflix Việt Nam
+      </p>
+    </footer>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
