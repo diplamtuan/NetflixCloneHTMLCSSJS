@@ -330,12 +330,13 @@ section {
     border: 2px solid rgba(128,128,128,0.7);
     box-shadow: 0 0 2em 0 rgb(0,0,0);
     border-radius: 0.75rem;
-    height: 104px;
-    width: 52%;
-    bottom: 46px;
+    /* height: 104px; */
+    max-height:104px;
+    width: 68%;
+    bottom: 5%;
     background-color: black;
-    left: 24%;
-    padding:8px 12px;
+    left: 15%;
+    padding: 8px 12px;
 }
 
 .section-container-left .section-left-download-wrapper .section-left-download-image{
